@@ -1,0 +1,32 @@
+\documentclass[a0paper,portrait]{baposter}
+\usepackage[utf8]{inputenc} %unicode support
+\usepackage[T1]{fontenc}
+
+\definecolor{fuchsiapink}{HTML}{DF88B7}
+\definecolor{veryperi}{HTML}{6667AB}
+\selectcolormodel{cmyk}
+\begin{document}
+
+\begin{poster}
+{grid=false,headerborder=open,colspacing=1em,bgColorOne=white,bgColorTwo=white,borderColor=veryperi, 
+headerColorOne=fuchsiapink, headerColorTwo=fuchsiapink, headerFontColor=white, boxColorOne=white, textborder=rounded, eyecatcher=false, headerheight=0.11\textheight, headershape=rounded, headershade=plain,headerfont=\Large\textsf, linewidth=2pt}
+
+{\textsf{Exemple de poster}} 
+{\sf\vspace{0.5em}\\
+Auteur 1 et auteur 2
+\vspace{0.1em}\\
+\small{Universit\'{e} C\^{o}te d'Azur
+\vspace{0.2em}\\
+email@univ-cotedazur.fr}}
+{\includegraphics[scale=0.5]{uca-logo-haut.png}} % University/lab logo
+
+\headerbox{1. Introduction}{name=introduction,column=0,row=0, span=3}{\vspace{40mm}}
+\headerbox{2. Model}{name=model,column=0,below=introduction,span=1}{\vspace{70mm}}
+\headerbox{3. Another section}{name=mcs,column=0,below=model,span=1}{\vspace{65mm}}
+\headerbox{4. Applications}{name=screen,span=2,column=1,below=introduction}{\vspace{80mm}}
+\headerbox{5. Computational results}{name=results,span=2,column=1,below=screen}{\vspace{60mm}}
+\headerbox{6. Conclusions}{name=conclusion,column=1,below=results,span=2,above=bottom}{
+\vspace{40mm}}
+\headerbox{7. References}{name=references,column=0,span=1,below=mcs,above=bottom}{}
+\end{poster}
+\end{document}

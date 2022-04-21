@@ -1,0 +1,178 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+%\documentclass[xcolor=dvipsnames,handout]{beamer}
+\usepackage{lmodern}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usetheme{Madrid}
+\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\setbeamertemplate{navigation symbols}{} %gets
+\setbeameroption{hide notes}
+\setbeamertemplate{note page}[plain]
+\usepackage{changepage}
+\usepackage{soul}
+\usepackage{amsmath,makecell}
+\usepackage{smartdiagram}
+%multi-row
+\usepackage{multirow}
+\usepackage{minted}
+\usepackage[table]{xcolor}% http://ctan.org/pkg/xcolor
+
+
+%%ANimated graphics
+
+\usepackage{animate}
+
+%\setbeamersize{text margin left=.5cm}
+%\setbeamersize{text margin right=.5cm}
+\def\ittri {$\blacktriangleright$}
+\newtheorem{teor}{Theorem}[section]
+\newtheorem{de}[teor]{D\'{e}finition}
+\newtheorem{ex}[teor]{Example}
+\newtheorem{lem}[teor]{Lemma}
+\newtheorem{co}[teor]{Corollary}
+\newtheorem{re}[teor]{Remark}
+\newtheorem{pr}[teor]{Problem}
+\newtheorem{res}[teor]{Result}
+\newtheorem{pro}[teor]{Proposition}
+\newtheorem{prop}[teor]{Property}
+\newtheorem{con}[teor]{Conjecture}
+
+\newcommand{\mpy}{\mint{python}|}
+\newcommand{\ms}{\mint{shell}|}
+\newcommand{\espa}{\qquad}
+\newcommand{\hue}{\textrm{  }}
+\newcommand{\D}{\displaystyle}
+\newcommand{\M}{\lambda}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\rojo}[1]{{\color{red}#1}}
+\newcommand{\azul}[1]{{\color{blue}#1}}
+\newcommand{\magenta}[1]{{\color{magenta}#1}}
+\newcommand{\naranja}[1]{{\color{orange}#1}}
+\newcommand{\celeste}[1]{{\color{cyan}#1}}
+\newcommand{\amarillo}[1]{{\color{yellow}#1}}
+\newcommand{\verde}[1]{{\color{green}#1}}
+\newcommand{\gris}[1]{{\color{gray}#1}}
+\newcommand{\negro}[1]{{\color{black}#1}}
+
+%Pantone Colors 2020
+\definecolor{coralpink}{HTML}{EAAC9D}
+\definecolor{classicblue}{HTML}{34558B}
+\definecolor{fadeddenim}{HTML}{798FA8}
+\definecolor{orangepeel}{HTML}{FD823E}
+\definecolor{ash}{HTML}{A09D9C}
+\definecolor{flamescarlet}{HTML}{CD212A}
+\definecolor{biscaygreen}{HTML}{47C6A3}
+\definecolor{cinnamonstick}{HTML}{9C4722}
+\definecolor{mosaicblue}{HTML}{117893}
+\definecolor{grapecompote}{HTML}{72617d}
+
+
+\newcommand{\classicblue}[1]{{\color{classicblue}#1}}
+\newcommand{\coralpink}[1]{{\color{coralpink}#1}}
+\newcommand{\ash}[1]{{\color{ash}#1}}
+\newcommand{\fadeddenim}[1]{{\color{fadeddenim}#1}}
+\newcommand{\orangepeel}[1]{{\color{orangepeel}#1}}
+\newcommand{\flamescarlet}[1]{{\color{flamescarlet}#1}}
+\newcommand{\biscaygreen}[1]{{\color{biscaygreen}#1}}
+\newcommand{\cinnamonstick}[1]{{\color{cinnamonstick}#1}}
+\newcommand{\mosaicblue}[1]{{\color{mosaicblue}#1}}
+\newcommand{\grapecompote}[1]{{\color{grapecompote}#1}}
+
+
+
+
+%\setbeamertemplate{footline}[frame number]{}
+
+\usepackage{beamerfontthemeprofessionalfonts}
+\usepackage{pdfrender}
+\usepackage{graphicx}
+%\usepackage[brazil]{babel}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+%\usepackage[ansinew]{inputenc}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+%\usepackage{aeguill}
+\usepackage{setspace}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,positioning,calc}
+\usepackage{lipsum,lmodern}
+%\usepackage[skins]{tcolorbox}
+\usepackage[most,skins]{tcolorbox}
+
+
+\usepackage{multirow}
+\usepackage{booktabs}
+
+%à  - â - ä -  \'{e} - è  - ê  - ë - \II  - î - ô  - ö - \'{u}  - û - ü - ÿ - ç
+%\def\E{\'{e} }\'{e}
+\def\EE{\`{e}} %\EE
+\def\EEE {\^{e}} %\EEE 
+\def\A{\`{a} }
+\def\AA{\^{a}}
+\def\O{\^{o}}
+\def\I{\^{i}}
+\def\II{\"{i}}
+
+
+
+%Pantone Colors 2021
+\definecolor{fruitdove}{HTML}{D36480}
+\definecolor{marigold}{HTML}{FEAE51}
+\definecolor{illuminating}{HTML}{f3df4d}
+\definecolor{ultimategray}{HTML}{96999b}
+\definecolor{adobe}{HTML}{A3623B}
+\definecolor{rootbeer}{HTML}{714A41}
+\definecolor{fuchsiafedora}{HTML}{CA4286}
+\definecolor{firewhirl}{HTML}{A73730}
+\definecolor{olivebranch}{HTML}{6A6A45}
+\definecolor{coconutcream}{HTML}{EEE0DC}
+\definecolor{soybean}{HTML}{D2C29D}
+\definecolor{springlake}{HTML}{667E91}
+
+%Pantone Colors 2022
+
+
+\definecolor{burnishedlilac}{HTML}{c6afb5}
+\definecolor{veryperi}{HTML}{6667AB}
+\definecolor{lotus}{HTML}{e5c3c3}
+\definecolor{innuendo}{HTML}{D2386C}
+\definecolor{skydiver}{HTML}{00589b}
+\definecolor{poinciana}{HTML}{ca3422}
+
+\newcommand{\skydiver}[1]{{\color{skydiver}#1}}
+\newcommand{\poinciana}[1]{{\color{poinciana}#1}}
+\newcommand{\olivebranch}[1]{{\color{olivebranch}#1}}
+
+\usepackage[colorlinks=true, pdfstartview=FitV,linkcolor=orange, citecolor=orange, urlcolor=orange]{hyperref}
+
+
+\setbeamercolor{palette primary}{bg=olivebranch,fg=coconutcream}
+\setbeamercolor{palette secondary}{bg=soybean,fg=veryperi}
+\setbeamercolor{palette tertiary}{bg=olivebranch,fg=coconutcream}
+\setbeamercolor{palette quaternary}{bg=soybean,fg=olivebranch}
+\setbeamercolor{structure}{fg=soybean} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=soybean} % TOC sections
+
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=coconutcream,fg=olivebranch}
+
+\title[]{}
+\date{\today}
+\author[]
+{\\
+\href{}{}}
+
+\institute[]{}
+
+\begin{document}
+\begin{frame}{}
+    
+\end{frame}
+\end{document}
